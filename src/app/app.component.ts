@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PBB Info';
+
+  constructor(private route: ActivatedRoute,
+      private router: Router) {}
+
+  cariNop(nop) {
+    this.router.navigate(['/list-sppt', nop]);
+  }
 }
