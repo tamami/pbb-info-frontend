@@ -1,3 +1,9 @@
 <p>
   list-sppt works!
-</p>
+
+  <ul>
+    <li *ngFor="let sppt of listSppt$ | async">
+      {{sppt.thnPajakSppt}}
+    </li>
+  </ul>
+

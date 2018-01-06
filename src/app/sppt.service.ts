@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Sppt } from './sppt';
+import { Response } from '@angular/http';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -15,7 +16,7 @@ export class SpptService {
   ) { }
 
   getSppt(nop): Observable<Sppt[]> {
-    return this.http.get<Sppt[]>(`api/sppt?nop=${nop}`);
+    return this.http.get<Sppt[]>(`http://localhost:8765/api/sppt?nop=${nop}`.map((res: Response) => res.json());
   }
 
   parsing(nop): string {
