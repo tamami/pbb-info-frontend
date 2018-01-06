@@ -14,6 +14,7 @@ export class AppComponent {
       private router: Router) {}
 
   cariNop(nop) {
+    console.log(nop);
     this.router.navigate(['/list-sppt', nop]);
   }
 }
