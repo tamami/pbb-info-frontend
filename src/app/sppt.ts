@@ -1,12 +1,49 @@
 export class Sppt {
-
-    kdPropinsi: string;
-    kdDati2: string;
-    kdKecamatan: string;
-    kdKelurahan: string;
-    kdBlok: string;
-    noUrut: string;
-    kdJnsOp: string;
-    thnPajakSppt: string;
-    
+    constructor(
+        public kdPropinsi: string,
+        public kdDati2: string,
+        public kdKecamatan: string,
+        public kdKelurahan: string,
+        public kdBlok: string,
+        public noUrut: string,
+        public kdJnsOp: string,
+        public thnPajakSppt: string,
+        public siklusSppt: number,
+        public kdKanwilBank: string,
+        public kdKppbbBank: string,
+        public kdBankTunggal: string,
+        public kdBankPersepsi: string,
+        public kdTp: string,
+        public nmWpSppt: string,
+        public jlnWpSppt: string,
+        public blokKavNoWpSppt: string,
+        public rwWpSppt: string,
+        public rtWpSppt: string,
+        public kelurahanWpSppt: string,
+        public kotaWpSppt: string,
+        public kdPosWpSppt: string,
+        public npwpSppt: string,
+        public noPersilSppt: string,
+        public kdKlsTanah: string,
+        public thnAwalKlsTanah: string,
+        public kdKlsBng: string,
+        public thnAwalKlsBng: string,
+        public tglJatuhTempoSppt: Date,
+        public luasBumiSppt: number,
+        public luasBngSppt: number,
+        public njopBumiSppt: number,
+        public njopBngSppt: number,
+        public njopSppt: number,
+        public njoptkpSppt: number,
+        public njkpSppt: number,
+        public pbbTerhutangSppt: number,
+        public faktorPengurangSppt: number,
+        public pbbYgHarusDibayarSppt: number,
+        public statusPembayaranSppt: string,
+        public statusTagihanSppt: string,
+        public statusCetakSppt: string,
+        public tglTerbitSppt: Date,
+        public tglCetakSppt: Date,
+        public nipPencetakSppt: string
+    ) {}
 }
